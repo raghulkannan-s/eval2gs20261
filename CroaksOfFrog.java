@@ -2,9 +2,11 @@ public class CroaksOfFrog {
     
     
     public static void main(String[] args) {
-        
-        String input = "crcoakroak";
-        System.out.println(solve(input));
+        String i1 = "croakcroak";
+        String i2 = "crcoakroak";
+        String i3 = "croakcrook";
+        String i4 = "croakcroa";
+        System.out.println(solve(i2));
     }
 
     public static String solve(String s){

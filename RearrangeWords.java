@@ -3,8 +3,10 @@
 public class RearrangeWords{
 
     public static void main(String[] args) {
-        String test = "Keep calm and carry on";
-        System.out.println(rearrange(test));
+        String i1 = "Leetcode makes me happy";
+        String i2 = "Keep calm and carry on";
+        String i3 = "To be or not to be";
+        System.out.println(rearrange(i2));
     }
 
     public static String rearrange(String s){
