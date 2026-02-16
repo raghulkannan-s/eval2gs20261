@@ -18,12 +18,14 @@ public class RearrangeWords{
         words[0] = ""+ Character.toUpperCase(words[0].charAt(0)) + words[0].substring(1);
         StringBuilder res = new StringBuilder();
         
-        for( String w : words ){
-            res.append(w);
-            res.append(" ");
+        for( int i = 0; i<words.length; i++ ){
+            res.append(words[i]);
+            if( i < words.length-1 ){
+                res.append(" ");
+            }
         }
         return res.toString();
-
+        
     }
 
     public static void sorter(String[] a){

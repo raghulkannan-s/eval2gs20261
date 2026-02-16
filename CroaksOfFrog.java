@@ -6,10 +6,10 @@ public class CroaksOfFrog {
         String i2 = "crcoakroak";
         String i3 = "croakcrook";
         String i4 = "croakcroa";
-        System.out.println(solve(i2));
+        System.out.println(solve(i3));
     }
 
-    public static String solve(String s){
+    public static int solve(String s){
 
             int[] count = new int[5];
             int frogs = 0;
@@ -25,7 +25,7 @@ public class CroaksOfFrog {
                     }
                 } else {
                     if( count[i - 1] == 0 ){
-                        return "-1";
+                        return -1;
                     }
                     count[i - 1]--;
                     if( i == 4 ){
@@ -36,7 +36,7 @@ public class CroaksOfFrog {
                 }
             }
 
-            return frogs == 0 ? ""+maxFrogs : "-1";
+            return frogs == 0 ? maxFrogs : -1;
 
     }
 }
@@ -87,3 +87,9 @@ public class CroaksOfFrog {
 // Expected Time Complexity: O(N), where N is the length of the input string.
 
 // Expected Space Complexity: O(1)
+
+
+
+
+
+
